@@ -410,8 +410,7 @@ class ConnectionPool:
     Represents a pool of connections to MySQL.
     """
 
-    def __init__(self, hostname=None, username=None, password=None,
-                 database=None,
+    def __init__(self, hostname, username, password, database=None,
                  num_connections=5, connect_timeout=None,
                  query_timeout=None, idle_timeout=None, retry_on_error=False,
                  temporary_error_strings=[], port=3306):
